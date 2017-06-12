@@ -1,0 +1,15 @@
+# Python
+*.pyc
+
+# PyCharm
+.idea
+
+# Eclipse
+.project
+.pydevproject
+.settings
+
+# OS files
+.DS_Store
+*.swp
+*.test
