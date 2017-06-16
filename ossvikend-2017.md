@@ -5,21 +5,22 @@
 
 
 
+-> _illumos_
 
--> Illumos, SmartOS,
+-> _SmartOS_
 
-
--> Danube Cloud
-
-
-
--> # Ján Poctavek, Daniel Kontšek
+-> _Danube Cloud_
 
 
 
+-> https://danubecloud.org
+---------------------------
 
 
--> OSS Vikend 18.6.2017                              Bratislava
+
+
+
+-> OSS Víkend						18.6.2017, Bratislava
 
 -------------------------------------------------
 
