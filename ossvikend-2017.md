@@ -326,7 +326,7 @@ Používateľská príručka
 
 Nástroj na výrobu image-ov
 
-Význam OSS pre vývojárov
+Prečo OSS?
 
 -------------------------------------------------
 
