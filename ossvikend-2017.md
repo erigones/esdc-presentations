@@ -282,6 +282,7 @@ Integrovaný monitoring (Zabbix), DNS, IP plán
 
 Rýchle snapshoty VM a zálohovanie
 
+...
 
 -------------------------------------------------
 
