@@ -2,24 +2,24 @@
 %author: Ján Poctavek, Daniel Kontšek (danubecloud.org)
 %date: 2017-06-18
 
-mdp
-===
 
--> A command-line based markdown presentation tool. <-
 
-_Basic controls:_
 
-next slide      *Enter*, *Space*, *Page Down*, *j*, *l*,
-                *Down Arrow*, *Right Arrow*
 
-previous slide  *Backspace*, *Page Up*, *h*, *k*,
-                *Up Arrow*, *Left Arrow*
+-> Illumos, SmartOS,
 
-quit            *q*
-reload          *r*
-slide N         *1..9*
-first slide     *Home*, *g*
-last slide      *End*, *G*
+
+-> Danube Cloud
+
+
+
+-> # Ján Poctavek, Daniel Kontšek
+
+
+
+
+
+-> OSS Vikend 18.6.2017                              Bratislava
 
 -------------------------------------------------
 
