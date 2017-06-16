@@ -1,6 +1,6 @@
 %title: illumos, SmartOS, Danube Cloud
-%author: Dano a Janči (danubecloud.org)
-%date: 2017-06-12
+%author: Ján Poctavek, Daniel Kontšek (danubecloud.org)
+%date: 2017-06-18
 
 mdp
 ===
@@ -41,11 +41,11 @@ last slide      *End*, *G*
 
 
 -> Stabilný OS + anarchia vo firme =
-<br>	
+<br>
 
 -> ZFS
 
--> Zony
+-> Zóny
 
 -> Dtrace
 
@@ -65,30 +65,30 @@ last slide      *End*, *G*
 
 2005: otvorenie Solaris kódu
 
-2007: vyvorenie OpenSolaris distribúcie
+2007: vytvorenie OpenSolaris distribúcie
 
 2009: odkúpenie Sun-u Oraclom
 
 2010: žiadne info čo bude s OS
 
-2010: Unikol interný dokument o zatvorení kódu
-      (Oznámenie nikdy nevyšlo verejne)
+2010: unikol interný dokument o zatvorení kódu
+      (oznámenie nikdy nevyšlo verejne)
 
 2011: Solaris 11 vyšiel bez zdrojových kódov
 
 -------------------------------------------------
 
--> # 2010: Illumos Odysea <-
+-> # 2010: ILLUMOS ODYSEA <-
 
 
-Do 90 dní z Oraclu odišla vačšina významných inžinierov
-(Tvorcovia ZFS, Dtrace, zón, networking team, ...)
+Do 90 dní z Oraclu odišla väčšina významných inžinierov.
+(Tvorcovia ZFS, Dtrace, zón, networking tím, ...)
 
-Fork OpenSolaris-u, nazvaný Illumos
+Fork OpenSolaris-u, nazvaný *illumos*.
 
-Mnohí vývojári skončili v Illumos komunite
+Mnohí vývojári skončili v illumos komunite.
 
-Paradox: Oracle nemôže čerpať kód z Illumosu
+Paradox: Oracle nemôže čerpať kód z illumosu.
 
 
 -------------------------------------------------
@@ -96,11 +96,11 @@ Paradox: Oracle nemôže čerpať kód z Illumosu
 -> # DISTRIBÚCIE POSTAVENÉ NA ILLUMOSE <-
 
 
+OpenIndiana     - server, desktop
 SmartOS	     - cloud hypervisor
 NexentaStor     - enterprise ZFS storage
-OpenIndiana     - desktop
 OpenSXCE        - sparc server distro
-Dyson           - Debian OS + Illumos kernel
+Dyson           - Debian OS + illumos kernel
 OmniOS          - storage, scalability distro
 ...
 
@@ -118,9 +118,9 @@ OmniOS          - storage, scalability distro
 
 -> LX zóny
 
--> network overlays (vxlan)
+-> network overlays (VXLAN)
 
--> json integracia
+-> JSON integrácia
 
 -------------------------------------------------
 
@@ -137,11 +137,11 @@ OmniOS          - storage, scalability distro
 
 -> ZVOL-s
 
--> dedup, inline kompresia, ...
+-> deduplikácia, inline kompresia, ...
 
 -------------------------------------------------
 
--> # ZÓNY (SOLARIS KONTAJNERY) <-
+-> # ZÓNY (SOLARIS CONTAINERS) <-
 
 
 -> Alternatívy: FreeBSD jails, LXC/Docker
@@ -149,7 +149,7 @@ OmniOS          - storage, scalability distro
 -> Cieľ zón: konsolidácia
 -> (security, resource management, bare-metal speed)
 
--> LX brand
+-> LX brand, Docker
 
 -> Image management + ZFS
 
@@ -160,7 +160,7 @@ OmniOS          - storage, scalability distro
 
 
 -> Plne virtualizované siete
--> (vnics, etherstubs, overlays)
+-> (VNICs, etherstubs, overlays)
 
 -> QoS, flow control
 
@@ -168,7 +168,7 @@ OmniOS          - storage, scalability distro
 
 -> Viditeľnosť 
 
--> Aggr, LACP, IPMP
+-> Agregácia liniek, LACP, IPMP
 
 -------------------------------------------------
 
@@ -180,8 +180,8 @@ OmniOS          - storage, scalability distro
 
 -> Viditeľnosť na úroveň C kódu
 
--> Providers pre vyššie jazyky
--> (python, php, java, ruby, ..)
+-> Podpora pre vyššie jazyky
+-> (Python, PHP, Java, Ruby, ...)
 
 -> Štatistické funkcie
 
@@ -208,13 +208,97 @@ OmniOS          - storage, scalability distro
 
 -> Budúcnosť ukáže
 
--> Techológie a nápady ostávajú
+-> Technológie a nápady ostávajú
 
 -> Obojsmerný tok technológií
--> (FreeBSD, Linux, ..)
+-> (FreeBSD, Linux, ...)
 
 
 -> Inovácie netvoria firmy, ale ľudia...
 
 -------------------------------------------------
 
+-> # DANUBE CLOUD <-
+
+Open source *software* na správu
+cloudovových datacentier.
+
+
+Agenda
+------
+
+História Erigones / Danube Cloud
+
+Vlastnosti Danube Cloud
+
+Demo
+
+Vývoj a open source
+
+Záver / Diskusia
+
+-------------------------------------------------
+
+-> # HISTÓRIA ERIGONES / DANUBE CLOUD <-
+
+
+Systémový administrátor
+
+Objavenie SmartOS-u
+
+Python, distribuovaný manažment úloh
+
+`Cieľ`: Sústredenie sa na používateľov a
+      služby namiesto opakovaných úloh
+
+
+-------------------------------------------------
+
+-> # VLASTNOSTI DANUBE CLOUD <-
+
+
+Rýchle a jednoduché nasadenie
+
+SmartOS hypervisor
+
+Virtuálne datacentrá (multi-tenancy)
+
+Integrovaný monitoring (Zabbix), DNS, IP plán
+
+Rýchle snapshoty VM a zálohovanie
+
+
+-------------------------------------------------
+
+-> # DEMO <-
+
+-------------------------------------------------
+
+-> # VÝVOJ A OPEN SOURCE <-
+
+
+Cesta k open source
+
+Používateľská príručka
+
+Nástroj na výrobu image-ov
+
+Význam OSS pre vývojárov
+
+-------------------------------------------------
+
+-> # ZÁVER A DISKUSIA <-
+
+
+Homepage: danubecloud.org
+
+User guide: docs.danubecloud.org
+
+Development: github.com/erigones/esdc-ce/wiki
+
+Contact: dc@erigones.com
+
+Spojte sa s nami:
+-----------------
+- facebook.com/DanubeCloud
+- twitter.com/DanubeCloud
