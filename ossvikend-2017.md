@@ -23,279 +23,198 @@ last slide      *End*, *G*
 
 -------------------------------------------------
 
--> # Supported markdown formatting <-
+-> # HISTÓRIA SOLARISU <-
 
-The input file is split into multiple slides by
-horizontal rules (hr). A hr consisting of at
-least 3 *\** or *-*. It can also contain spaces but
-no other characters.
 
-Each of these represents the start of a new slide.
+1983: SunOS 1.0  (BSD 4.1)
 
-\* \* \*
-\---
-\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
-\- - -
+1994: SunOS 4.1.4  (BSD 4.3)
 
--------------------------------------------------
+1991: System V Release 4 (BSD + System V + Xenix)
 
--> # Supported markdown formatting <-
-
-First-level headers can be prefixed by single *#*
-or underlined by *===*.
-
-\# first-level
-
-becomes
-
-# first-level
-
--------------------------------------------------
-
--> # Supported markdown formatting <-
-
-Second-level headers can be prefixed by *##* or
-underlined by *---*.
-
-second-level
-\------------
-
-becomes
-
-second-level
-------------
+1992: SunOS 5.0 = Solaris 2.0  (SVR4)
 
 
 -------------------------------------------------
 
--> # Supported markdown formatting's <-
+-> # ZLATÝ VEK SOLARISU (2001 - 2009) <-
 
-Inline codes are surrounded with backticks.
 
-C program starts with \`main()\`.
+-> Stabilný OS + anarchia vo firme =
+<br>	
 
-becomes
+-> ZFS
 
-C program starts with `main()`.
+-> Zony
 
--------------------------------------------------
+-> Dtrace
 
--> # Supported markdown formatting <-
+-> Crossbow (network)
 
-Code blocks are automatically detected by 4 spaces
-at the beginning of a line.
+-> SMF
 
-Tabs are automatically expanded to 4 spaces while
-parsing the input.
+-> Fault Management Facility
 
-\    int main(int argc, char \*argv[]) {
-\        printf("%s\\n", "Hello world!");
-\    }
+-> ...
 
-becomes
-
-    int main(int argc, char *argv[]) {
-        printf("%s\n", "Hello world!");
-    }
 
 -------------------------------------------------
 
--> # Supported markdown formatting <-
+-> # BLÍZKE STRETNUTIE S ORACLOM <-
 
-You can also use [pandoc](http://pandoc.org/demo/example9/pandocs-markdown.html)'s fenced code block
-extension. Use at least three ~ chars to open and
-at least as many or more ~ for closing.
 
-\~~~ {.numberLines}
-\int main(int argc, char \*argv[]) {
-\    printf("%s\\n", "Hello world!");
-\}
-\~~~~~~~~~~~~~~~~~~
+2005: otvorenie Solaris kódu
 
-becomes
+2007: vyvorenie OpenSolaris distribúcie
 
-~~~ {.numberLines}
-int main(int argc, char \*argv[]) {
-    printf("%s\\n", "Hello world!");
-}
-~~~~~~~~~~~~~~~~~~
+2009: odkúpenie Sun-u Oraclom
 
-Pandoc attributes (like ".numberlines" etc.)
-will be ignored
+2010: žiadne info čo bude s OS
+
+2010: Unikol interný dokument o zatvorení kódu
+      (Oznámenie nikdy nevyšlo verejne)
+
+2011: Solaris 11 vyšiel bez zdrojových kódov
 
 -------------------------------------------------
 
--> # Supported markdown formatting <-
+-> # 2010: Illumos Odysea <-
 
-Quotes are auto-detected by preceding *>*.
 
-Multiple *>* are interpreted as nested quotes.
+Do 90 dní z Oraclu odišla vačšina významných inžinierov
+(Tvorcovia ZFS, Dtrace, zón, networking team, ...)
 
-\> quote
-\>> nested quote 1
-\> > nested quote 2
+Fork OpenSolaris-u, nazvaný Illumos
 
-becomes
+Mnohí vývojári skončili v Illumos komunite
 
-> quote
->> nested quote 1
-> > nested quote 2
-
--------------------------------------------------
-
--> # Supported markdown formatting <-
-
-Inline highlighting is supported as followed:
-
-\- *\** colors text as red
-\- *\_* underlines text
-
-\_some\_ \*highlighted\* \_\*text\*\_
-
-becomes
-
-_some_ *highlighted* _*text*_
-
--------------------------------------------------
-
--> # Supported markdown formatting <-
-
-Backslashes force special markdown characters
-like *\**, *\_*, *#* and *>* to be printed as
-normal characters.
-
-\\\*special\\\*
-
-becomes
-
-\*special\*
-
--------------------------------------------------
-
--> # Supported markdown formatting <-
-
-Leading *\** or *-* indicate lists.
-
-list
-\* major
-\    - minor
-\        - \*important\*
-\          detail
-\    - minor
-
-becomes
-
-list
-* major
-    - minor
-        - *important*
-          detail
-    - minor
-
--------------------------------------------------
-
--> # Supported markdown formatting <-
-
-A single *\<br\>* or *^* in a line indicates mdp
-to stop the output on that position.
-
-This can be used to show bullet points
-line by line.
-
-*\<br\>* is also not displayed in HTML converted
-output.
-
-Agenda
-<br>
-* major
-<br>
-    * minor
-<br>
-* major
-  ^
-    * minor
-      ^
-        * detail
-
--------------------------------------------------
-
--> # Supported markdown formatting <-
-
-Leading *->* indicates centering.
-
-\-> # test <-
-\-> ## test <-
-\-> test
-\-> \_\*test\*\_ <-
-
-becomes
-
--> # test <-
--> ## test <-
--> test
--> _*test*_ <-
-
--------------------------------------------------
-
--> # Supported markdown formatting <-
-
-URL in pandoc style are supported:
-
-\[Google](http://www.google.com/)
-
-becomes
-
-[Google](http://www.google.com/)
-
--------------------------------------------------
-
--> ## More information about markdown <-
-
-can be found in the [markdown documentation](http://daringfireball.net/projects/markdown/).
-
--------------------------------------------------
-
--> # Support for UTF-8 special characters <-
-
-Here are some examples.
-
-ae = ä, oe = ö, ue = ü, ss = ß
-upsilon = Ʊ, phi = ɸ
-
-▛▀▀▀▀▀▀▀▀▀▜
-▌rectangle▐
-▙▄▄▄▄▄▄▄▄▄▟
+Paradox: Oracle nemôže čerpať kód z Illumosu
 
 
 -------------------------------------------------
 
--> # Suspend your presentation for hands-on examples <-
+-> # DISTRIBÚCIE POSTAVENÉ NA ILLUMOSE <-
 
-Use *Ctrl + z* to suspend the presentation.
 
-Use *fg* to resume it.
-
--------------------------------------------------
-
--> # Convert your presentation to PDF <-
-
-To publish your presentation later on, you may
-want to convert it to PDF.
-
-This can be achieved by two additional tools:
-
-\- *markdown* to convert to HTML
-\- *wkhtmltopdf* to convert from HTML to PDF
-
-After installing them, you can simply type:
-
-    $ markdown sample.md | wkhtmltopdf - sample.pdf
+SmartOS	     - cloud hypervisor
+NexentaStor     - enterprise ZFS storage
+OpenIndiana     - desktop
+OpenSXCE        - sparc server distro
+Dyson           - Debian OS + Illumos kernel
+OmniOS          - storage, scalability distro
+...
 
 -------------------------------------------------
 
--> ## Last words <-
+-> # VÝVOJ POKRAČUJE <-
 
-I hope you like *mdp*.
 
-If you observe strange behavior, feel free to
-open an issue on [GitHub](https://github.com/visit1985/mdp).
+-> Čo má SmartOS navyše:
+-> (cloudový OS)
+
+-> KVM
+
+-> imgadm
+
+-> LX zóny
+
+-> network overlays (vxlan)
+
+-> json integracia
+
+-------------------------------------------------
+
+-> # ZFS <-
+
+-> Enterprise-grade filesystem
+
+
+-> FS + volume manager
+
+-> Copy on write
+
+-> Snapshoty, prístup k nim
+
+-> ZVOL-s
+
+-> dedup, inline kompresia, ...
+
+-------------------------------------------------
+
+-> # ZÓNY (SOLARIS KONTAJNERY) <-
+
+
+-> Alternatívy: FreeBSD jails, LXC/Docker
+
+-> Cieľ zón: konsolidácia
+-> (security, resource management, bare-metal speed)
+
+-> LX brand
+
+-> Image management + ZFS
+
+
+-------------------------------------------------
+
+-> # NETWORKING (project Crossbow) <-
+
+
+-> Plne virtualizované siete
+-> (vnics, etherstubs, overlays)
+
+-> QoS, flow control
+
+-> Bezpečnosť
+
+-> Viditeľnosť 
+
+-> Aggr, LACP, IPMP
+
+-------------------------------------------------
+
+-> # DTRACE <-
+
+-> System-wide tracing
+
+-> Minimálne spomalenie aplikácií
+
+-> Viditeľnosť na úroveň C kódu
+
+-> Providers pre vyššie jazyky
+-> (python, php, java, ruby, ..)
+
+-> Štatistické funkcie
+
+-> Dtrace toolkit
+
+-------------------------------------------------
+
+-> # KVM + QEMU <-
+
+-> Preportované z Linuxu
+
+-> To najlepšie z oboch svetov:
+
+-> Networking
+-> Dtrace
+-> Bezpečnosť zón
+-> ZFS zvols
+-> imgadm
+
+-------------------------------------------------
+
+-> # DEDIČSTVO SOLARISU <-
+
+
+-> Budúcnosť ukáže
+
+-> Techológie a nápady ostávajú
+
+-> Obojsmerný tok technológií
+-> (FreeBSD, Linux, ..)
+
+
+-> Inovácie netvoria firmy, ale ľudia...
+
+-------------------------------------------------
+
