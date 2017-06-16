@@ -5,16 +5,14 @@
 
 
 
--> _illumos_
+-> _illumos_ 
 
--> _SmartOS_
+-> _SmartOS_ 
 
 -> _Danube Cloud_
 
 
 
--> https://danubecloud.org
----------------------------
 
 
 
@@ -29,9 +27,12 @@
 
 1983: SunOS 1.0  (BSD 4.1)
 
+
 1994: SunOS 4.1.4  (BSD 4.3)
 
+
 1991: System V Release 4 (BSD + System V + Xenix)
+
 
 1992: SunOS 5.0 = Solaris 2.0  (SVR4)
 
@@ -82,12 +83,16 @@
 -> # 2010: ILLUMOS ODYSEA <-
 
 
-Do 90 dní z Oraclu odišla väčšina významných inžinierov.
-(Tvorcovia ZFS, Dtrace, zón, networking tím, ...)
+Do 90 dní z Oraclu odišla väčšina významných
+vývojárov. (tvorcovia ZFS, Dtrace, zón,
+networking tím, ...)
+
 
 Fork OpenSolaris-u, nazvaný *illumos*.
 
-Mnohí vývojári skončili v illumos komunite.
+
+Mnohí Sun vývojári skončili v illumos komunite.
+
 
 Paradox: Oracle nemôže čerpať kód z illumosu.
 
@@ -98,11 +103,17 @@ Paradox: Oracle nemôže čerpať kód z illumosu.
 
 
 OpenIndiana     - server, desktop
+
 SmartOS	     - cloud hypervisor
+
 NexentaStor     - enterprise ZFS storage
+
 OpenSXCE        - sparc server distro
+
 Dyson           - Debian OS + illumos kernel
+
 OmniOS          - storage, scalability distro
+
 ...
 
 -------------------------------------------------
@@ -110,49 +121,50 @@ OmniOS          - storage, scalability distro
 -> # VÝVOJ POKRAČUJE <-
 
 
--> Čo má SmartOS navyše:
--> (cloudový OS)
+Čo má SmartOS navyše:
+(cloudový OS)
 
--> KVM
+KVM
 
--> imgadm
+imgadm
 
--> LX zóny
+LX zóny
 
--> network overlays (VXLAN)
+network overlays (VXLAN)
 
--> JSON integrácia
+JSON integrácia
 
 -------------------------------------------------
 
 -> # ZFS <-
 
--> Enterprise-grade filesystem
+
+Enterprise-grade filesystem
 
 
--> FS + volume manager
+FS + volume manager
 
--> Copy on write
+Copy on write
 
--> Snapshoty, prístup k nim
+Snapshoty, prístup k nim
 
--> ZVOL-s
+ZVOL-s
 
--> deduplikácia, inline kompresia, ...
+deduplikácia, inline kompresia, ...
 
 -------------------------------------------------
 
 -> # ZÓNY (SOLARIS CONTAINERS) <-
 
 
--> Alternatívy: FreeBSD jails, LXC/Docker
+Alternatívy: FreeBSD jails, LXC/Docker
 
--> Cieľ zón: konsolidácia
--> (security, resource management, bare-metal speed)
+Cieľ zón: konsolidácia
+(security, resource management, bare-metal speed)
 
--> LX brand, Docker
+LX brand, Docker
 
--> Image management + ZFS
+Image management + ZFS
 
 
 -------------------------------------------------
@@ -160,62 +172,64 @@ OmniOS          - storage, scalability distro
 -> # NETWORKING (project Crossbow) <-
 
 
--> Plne virtualizované siete
--> (VNICs, etherstubs, overlays)
+Plne virtualizované siete
+(VNICs, etherstubs, overlays)
 
--> QoS, flow control
+QoS, flow control
 
--> Bezpečnosť
+Bezpečnosť
 
--> Viditeľnosť 
+Viditeľnosť 
 
--> Agregácia liniek, LACP, IPMP
+Agregácia liniek, LACP, IPMP
 
 -------------------------------------------------
 
 -> # DTRACE <-
 
--> System-wide tracing
 
--> Minimálne spomalenie aplikácií
+System-wide tracing
 
--> Viditeľnosť na úroveň C kódu
+Minimálne spomalenie aplikácií
 
--> Podpora pre vyššie jazyky
--> (Python, PHP, Java, Ruby, ...)
+Viditeľnosť na úroveň C kódu
 
--> Štatistické funkcie
+Podpora pre vyššie jazyky
+(Python, PHP, Java, Ruby, ...)
 
--> Dtrace toolkit
+Štatistické funkcie
+
+Dtrace toolkit
 
 -------------------------------------------------
 
 -> # KVM + QEMU <-
 
--> Preportované z Linuxu
 
--> To najlepšie z oboch svetov:
+Preportované z Linuxu
 
--> Networking
--> Dtrace
--> Bezpečnosť zón
--> ZFS zvols
--> imgadm
+To najlepšie z oboch svetov:
+
+Networking
+Dtrace
+Bezpečnosť zón
+ZFS zvols
+imgadm
 
 -------------------------------------------------
 
 -> # DEDIČSTVO SOLARISU <-
 
 
--> Budúcnosť ukáže
+Budúcnosť ukáže
 
--> Technológie a nápady ostávajú
+Technológie a nápady ostávajú
 
--> Obojsmerný tok technológií
--> (FreeBSD, Linux, ...)
+Obojsmerný tok technológií
+(FreeBSD, Linux, ...)
 
 
--> Inovácie netvoria firmy, ale ľudia...
+Inovácie netvoria firmy, ale ľudia...
 
 -------------------------------------------------
 
@@ -272,6 +286,33 @@ Rýchle snapshoty VM a zálohovanie
 -------------------------------------------------
 
 -> # DEMO <-
+
+
+        /\__/\
+       /`    '\
+     === 0  0 ===                DEMO
+       \  --  /
+      /        \                   TIME!
+     /          \
+    |            |
+     \  ||  ||  /
+      \_oo__oo_/#######o
+
+-------------------------------------------------
+
+-> # DEMO <-
+
+                /^--^\     /^--^\     /^--^\
+                \____/     \____/     \____/
+               /      \   /      \   /      \
+              |        | |        | |        |
+               \__  __/   \__  __/   \__  __/
+    |^|^|^|^|^|^|^\ \^|^|^|^/ /^|^|^|^|^\ \^|^|^|^|^|^|^|
+    | | | | | | | |\ \| | |/ /| | | | | | \ \ | | | | | |
+    ##############/ /######\ \###########/ /#############
+    | | | | | | | \/| | | | \/| | | | | |\/ | | | | | | |
+    |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|
+
 
 -------------------------------------------------
 
