@@ -57,8 +57,6 @@
 
 -> Fault Management Facility
 
--> ...
-
 
 -------------------------------------------------
 
@@ -73,8 +71,8 @@
 
 2010: žiadne info čo bude s OS
 
-2010: unikol interný dokument o zatvorení kódu
-      (oznámenie nikdy nevyšlo verejne)
+2010: unikol interný dokument o nezáujme 
+      o OpenSolaris (nikdy nevyšlo verejne)
 
 2011: Solaris 11 vyšiel bez zdrojových kódov
 
@@ -83,12 +81,12 @@
 -> # 2010: ILLUMOS ODYSEA <-
 
 
-Do 90 dní z Oraclu odišla väčšina významných
-vývojárov. (tvorcovia ZFS, Dtrace, zón,
-networking tím, ...)
+Do konca 2010 z Oraclu odišla väčšina
+významných vývojárov (tvorcovia ZFS, Dtrace,
+zón, networking tím, ...).
 
 
-Fork OpenSolaris-u, nazvaný *illumos*.
+Vznikol fork OpenSolaris-u nazvaný *illumos*.
 
 
 Mnohí Sun vývojári skončili v illumos komunite.
