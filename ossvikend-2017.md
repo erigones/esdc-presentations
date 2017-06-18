@@ -75,6 +75,7 @@
       o OpenSolaris (nikdy nevyšlo verejne)
 
 2011: Solaris 11 vyšiel bez zdrojových kódov
+      (Solaris became "SoLarry's")
 
 -------------------------------------------------
 
