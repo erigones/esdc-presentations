@@ -17,7 +17,6 @@
 
 
 
-
 -> OSS Víkend						18.6.2017, Bratislava
 
 -------------------------------------------------
@@ -236,7 +235,6 @@ Inovácie netvoria firmy, ale ľudia...
 
 Open source *software* na správu
 cloudovových datacentier.
-
 
 Agenda
 ------
